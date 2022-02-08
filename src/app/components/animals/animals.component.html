@@ -1,0 +1,4 @@
+<div *ngFor="let animal of animalList">
+  {{ animal.name + animal.age + animal.type }}
+  <span *ngIf="animal.isFed">{{ animal.isFed }}</span>
+</div>

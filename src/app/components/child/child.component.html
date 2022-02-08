@@ -1,0 +1,13 @@
+<div>
+  <input type="text" (keyup)="keyup($event)" />
+
+  <p>{{ name }}</p>
+
+  <input type="text" (keyup)="keyupTwo($event)" />
+
+  <p>{{ name2 }}</p>
+
+  <input type="text" #name3 (keyup.enter)="keyupThree($event)" />
+
+  <p>{{ name3.value }}</p>
+</div>
